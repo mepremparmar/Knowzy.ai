@@ -691,7 +691,6 @@ textarea::placeholder {
     width: 80%;
     height: 360px;
     margin-top: 80px;
-    border: 1px solid white;
   }
 
   .user-message,
