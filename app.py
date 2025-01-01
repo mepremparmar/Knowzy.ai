@@ -70,7 +70,7 @@ def get_vector_store(text_chunks):
     if not text_chunks:
         raise ValueError("No text chunks provided for vector store creation.")
     
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "\\M.Fest\\gen-lang-client-0718220959-c5cd76723902.json"
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "c5cd76723902dd63b81524ee3c1e40c9f71f52e8"
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 
     vector_store = FAISS.from_texts(text_chunks, embedding=embeddings)
@@ -79,7 +79,7 @@ def get_vector_store(text_chunks):
 # load vector store
 def load_vector_store():
     """Load the pre-saved FAISS vector store."""
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "\\M.Fest\\gen-lang-client-0718220959-c5cd76723902.json"
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "c5cd76723902dd63b81524ee3c1e40c9f71f52e8"
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
     return FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
 
