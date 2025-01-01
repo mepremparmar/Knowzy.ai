@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-page">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/knowzy Logo.svg') }}">
+        </div>
+
+        <div class="background">
+            <img class="grid" src="{{ url_for('static', filename='images/grid0.svg') }}">
+            <img class="extra-boxes" src="{{ url_for('static', filename='images/extra-boxes0.svg') }}">
+            <img class="stars" src="{{ url_for('static', filename='images/stars0.svg') }}">
+        </div>
+        
+        <div class="chat-messages" id="chatMessages"> </div>
+
+        <div class="hello-what-can-i-help-you-with">
+            <span>Hello! What can I help you with? </span>
+        </div>
+        <div class="exact-loader" id="loadingIndicator">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        
+        <div class="chat-container">
+            <button class="addFileBtn" inputtype="file"> 
+                <img class="plusbtn" src="{{ url_for('static', filename='images/plus button.svg') }}">
+            </button>
+            <!-- pdf icon if pdf is successfully uploaded -->
+            <div class="uploaded-pdfs">
+                <ul id="pdfList"></ul>
+            </div>
+            
+            
+            <div class="circle">
+                <img class="logo-circle" src="{{ url_for('static', filename='images/logo.svg') }}">
+            </div>
+            <textarea class="messageInput" placeholder="Message Knowzy.ai . . ."></textarea>
+            <button class="send-btn" id="sendBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" color="white" width="14" height="14" viewBox="0 0 22 22" fill="none">
+                    <path d="M7.27276 3.41001C7.04749 3.41796 6.82292 3.38046 6.61246 3.29974C6.402 3.21902 6.20995 3.09673 6.04777 2.94018C5.88559 2.78362 5.75661 2.59601 5.66851 2.38852C5.58042 2.18104 5.53502 1.95793 5.53502 1.73252C5.53502 1.50711 5.58042 1.28401 5.66851 1.07652C5.75661 0.869035 5.88559 0.68142 6.04777 0.524865C6.20995 0.368311 6.402 0.246025 6.61246 0.165303C6.82293 0.0845821 7.04749 0.04708 7.27276 0.0550314L19.9331 0.0550306C20.3779 0.0553079 20.8044 0.232131 21.1189 0.546661C21.4335 0.861192 21.6103 1.28771 21.6106 1.73252L21.6106 14.3928C21.6185 14.6181 21.581 14.8427 21.5003 15.0531C21.4196 15.2636 21.2973 15.4556 21.1407 15.6178C20.9842 15.78 20.7966 15.909 20.5891 15.9971C20.3816 16.0852 20.1585 16.1306 19.9331 16.1306C19.7077 16.1306 19.4845 16.0852 19.2771 15.9971C19.0696 15.909 18.882 15.78 18.7254 15.6178C18.5689 15.4556 18.4466 15.2636 18.3658 15.0531C18.2851 14.8427 18.2476 14.6181 18.2556 14.3928L18.2556 5.78382L2.92078 21.1186C2.606 21.4334 2.17905 21.6102 1.73388 21.6102C1.2887 21.6102 0.861763 21.4334 0.546977 21.1186C0.23219 20.8038 0.0553453 20.3769 0.0553453 19.9317C0.055346 19.4865 0.232191 19.0596 0.546977 18.7448L15.8818 3.41001L7.27276 3.41001Z" fill="white"/>
+                </svg>
+            </button>
+        </div>
+        
+    </div>
+    
+</body> 
+<script>
+    const pdfIconUrl = "{{ url_for('static', filename='images/pdf-icon.svg') }}";
+    const userAvatarUrl = "{{ url_for('static', filename='images/user.jpg') }}";
+    const botAvatarUrl = "{{ url_for('static', filename='images/logo1.svg') }}";
+</script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</html>

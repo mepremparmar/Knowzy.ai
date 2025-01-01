@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <title>knowzy.ai</title>
+</head>
+<body>
+  <div class="frame-12"> 
+    <div class="logo">
+      <img src="{{ url_for('static', filename='images/knowzy Logo.svg') }}">
+    </div>
+    <div class="grids">
+      <img class="vector0" src="{{ url_for('static', filename='images/vector0.svg')}}">
+      <img class="vector1" src="{{ url_for('static', filename='images/vector1.svg') }}">
+      <img class="vector2" src="{{ url_for('static', filename='images/vector2.svg') }}">
+      <img class="vector3" src="{{ url_for('static', filename='images/vector3.svg') }}">
+      <img class="vector4" src="{{ url_for('static', filename='images/vector4.svg') }}">
+      <img class="vector5" src="{{ url_for('static', filename='images/vector5.svg') }}">
+      <img class="extra-boxes" src="{{ url_for('static', filename='images/extra-boxes0.svg') }}">
+      <img class="stars" src="{{ url_for('static', filename='images/stars0.svg')}}">
+    </div>
+    <!-- <img src="{{ url_for('static', filename='images/stars0.svg') }}"> -->
+    <div class="your-personal-ai-advisor">
+      <span>
+        <span class="your-personal-ai-advisor-span">Your</span>
+          <span class="your-personal-ai-advisor-span2">
+          Personal
+          <br />
+        </span>
+        <span class="your-personal-ai-advisor-span3">AI Advisor</span>
+      </span>
+    </div>
+  <header>
+    <h6>It allows users to chat seamlessly with multiple PDFs, extracting and summarizing information,<br>
+        while also answering questions outside the scope of the uploaded documents.</h6>
+  </header>
+  <div class="The-Smart-Choice-is-Knowzy">
+  "The Smart Choice is Knowzy"
+  </div>
+  <div class="cta">
+    <button class="button" onclick="handleButtonClick()">Get Started&nbsp;
+      <span style="margin-right: 5px;"></span>
+    <svg width="17" height="17" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.27325 3.40806C7.04798 3.41601 6.82341 3.37851 6.61295 3.29779C6.40249 3.21706 6.21044 3.09478 6.04826 2.93822C5.88608 2.78167 5.7571 2.59405 5.669 2.38657C5.58091 2.17908 5.53551 1.95598 5.53551 1.73057C5.53551 1.50515 5.58091 1.28205 5.669 1.07457C5.7571 0.867081 5.88608 0.679466 6.04826 0.522911C6.21044 0.366357 6.40249 0.244071 6.61295 0.16335C6.82341 0.0826286 7.04798 0.0451259 7.27325 0.0530777L19.9336 0.0530772C20.3784 0.0533539 20.8049 0.230178 21.1194 0.544708C21.4339 0.859238 21.6108 1.28575 21.611 1.73057L21.611 14.3909C21.619 14.6161 21.5815 14.8407 21.5008 15.0512C21.4201 15.2616 21.2978 15.4537 21.1412 15.6159C20.9847 15.778 20.797 15.907 20.5896 15.9951C20.3821 16.0832 20.159 16.1286 19.9336 16.1286C19.7081 16.1286 19.485 16.0832 19.2776 15.9951C19.0701 15.907 18.8825 15.778 18.7259 15.6159C18.5693 15.4537 18.4471 15.2616 18.3663 15.0512C18.2856 14.8407 18.2481 14.6161 18.2561 14.3909L18.2561 5.78186L2.92127 21.1167C2.60649 21.4314 2.17954 21.6083 1.73437 21.6083C1.28919 21.6083 0.862252 21.4314 0.547466 21.1167C0.23268 20.8019 0.055835 20.3749 0.055835 19.9298C0.0558351 19.4846 0.232681 19.0576 0.547467 18.7429L15.8823 3.40806L7.27325 3.40806Z" fill="black"/>
+    </svg>
+    </button> 
+  </div>
+  <div class="introduction-to-knowzyai">Introducing Knowzy.ai </div>
+<!-- Video Placeholder Section -->
+  <div class="video-container">
+    <video id="myvideo" class="loop-video" controls autoplay muted loop>
+      <source src="{{ url_for('static', filename='video/landingpage video.mp4') }}" type="video/mp4">
+    </video>
+  </div>
+  <div class="component-2">
+    <div class="text">
+        Welcome to Knowzy, your intelligent knowledge assistant!
+      <br>
+      <br>
+        Knowzy is an advanced AI-powered platform designed to make information retrieval effortless and efficient. With Knowzy, you can:
+      </br>
+      <br>
+      <ul>
+        <li>
+        Chat with Multiple PDFs: Upload multiple documents and have interactive conversations to extract and summarize insights seamlessly.
+        </li>
+        <li>
+        Ask Anything Beyond Documents: Get answers to your queries, even if they aren’t in the uploaded files, powered by advanced AI capabilities.
+        </li>
+      </ul> 
+      </br>
+       Whether you're a student, researcher, or professional, Knowzy helps you save time and focus on what matters most. Experience the power of intuitive knowledge access today!
+      </br>
+    </div> 
+  </div>
+  <div class="features">Features</div>
+    <div class="features-box ">
+      <div class="feature1">
+        <h3 style="font-weight: 400; font-size: x-large;">Multilingual<br>Support</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 159 159" fill="none" class="img1">
+        <path d="M72.2918 0.208496H14.6252C6.696 0.208496 0.208496 6.696 0.208496 14.6252V101.125L21.8335 79.5002H57.8752V72.2918C57.8752 56.4335 70.7781 43.4585 86.7085 43.4585V14.6252C86.7085 6.696 80.221 0.208496 72.2918 0.208496ZM72.2918 21.8335H61.4793C59.0285 30.4114 54.5593 38.4127 48.3602 45.3327L48.216 45.4768L57.2985 54.4872L54.6314 61.7677L43.4585 50.6668L25.4377 68.6877L20.4639 63.4256L38.701 45.4768C34.2961 40.5987 30.695 35.0511 28.0327 29.0418H35.1689C37.4035 33.3668 40.1427 37.4756 43.4585 41.1518C48.5039 35.548 52.3546 28.9748 54.7756 21.8335H14.6252V14.6252H39.8543V7.41683H47.0627V14.6252H72.2918V21.8335ZM144.375 57.8752H86.7085C78.7793 57.8752 72.2918 64.3627 72.2918 72.2918V122.75C72.2918 130.679 78.7793 137.167 86.7085 137.167H137.167L158.792 158.792V72.2918C158.792 64.3627 152.304 57.8752 144.375 57.8752ZM134.5 129.958L128.373 113.74H102.711L96.656 129.958H85.8435L110.136 65.0835H120.948L145.312 129.958H134.5ZM115.542 79.5002L124.336 102.927H106.82L115.542 79.5002Z" fill="white"/>
+        </svg>
+        <p style="font-weight: 300;">Interact with PDFs and AI in your preferred language. Switch between English, Spanish, French, and more seamlessly.</p>
+      </div>
+      <div class="feature2">
+        <h3 style="font-weight: 400; font-size: x-large;">Multiple PDF<br> Support</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 180 180" fill="none" class="img2">
+        <path d="M37.5054 88.5635C36.0844 88.5635 34.7215 89.0818 33.7167 90.0045C32.7119 90.9273 32.1474 92.1787 32.1474 93.4836V113.164C32.1474 114.469 32.7119 115.721 33.7167 116.644C34.7215 117.566 36.0844 118.085 37.5054 118.085C38.9264 118.085 40.2892 117.566 41.294 116.644C42.2988 115.721 42.8633 114.469 42.8633 113.164V111.531H46.4423C49.759 111.531 52.9398 110.321 55.285 108.167C57.6302 106.014 58.9477 103.093 58.9477 100.047C58.9477 97.0015 57.6302 94.0806 55.285 91.927C52.9398 89.7733 49.759 88.5635 46.4423 88.5635H37.5054ZM46.4423 101.691H42.8633V98.4038H46.4423C46.917 98.4038 47.3721 98.577 47.7077 98.8852C48.0434 99.1933 48.2319 99.6113 48.2319 100.047C48.2319 100.483 48.0434 100.901 47.7077 101.209C47.3721 101.517 46.917 101.691 46.4423 101.691ZM96.4424 93.4738C96.4452 92.1706 97.0109 90.9216 98.0154 90.0011C99.0199 89.0805 100.381 88.5635 101.8 88.5635H112.505C113.926 88.5635 115.289 89.0818 116.294 90.0045C117.299 90.9273 117.863 92.1787 117.863 93.4836C117.863 94.7886 117.299 96.04 116.294 96.9627C115.289 97.8855 113.926 98.4038 112.505 98.4038H107.158V101.7H112.516C113.937 101.7 115.3 102.219 116.305 103.141C117.309 104.064 117.874 105.316 117.874 106.621C117.874 107.925 117.309 109.177 116.305 110.1C115.3 111.022 113.937 111.541 112.516 111.541H107.158L107.169 113.155C107.17 113.801 107.033 114.441 106.765 115.038C106.497 115.636 106.104 116.179 105.607 116.637C104.604 117.561 103.243 118.082 101.822 118.085C100.401 118.087 99.0367 117.571 98.0299 116.65C97.0231 115.73 96.4559 114.479 96.4531 113.174L96.4424 106.611V93.4738ZM69.6528 88.5635C68.2318 88.5635 66.869 89.0818 65.8642 90.0045C64.8594 90.9273 64.2949 92.1787 64.2949 93.4836V113.164C64.2949 114.469 64.8594 115.721 65.8642 116.644C66.869 117.566 68.2318 118.085 69.6528 118.085H75.0322C79.2952 118.085 83.3836 116.529 86.398 113.761C89.4124 110.993 91.1059 107.239 91.1059 103.324C91.1059 99.4093 89.4124 95.6549 86.398 92.8867C83.3836 90.1186 79.2952 88.5635 75.0322 88.5635H69.6528ZM75.0107 108.244V98.4038H75.0322C76.4532 98.4038 77.816 98.9222 78.8208 99.8449C79.8256 100.768 80.3901 102.019 80.3901 103.324C80.3901 104.629 79.8256 105.88 78.8208 106.803C77.816 107.726 76.4532 108.244 75.0322 108.244H75.0107ZM75.0322 44.2817V0H26.7895C22.5265 0 18.4381 1.55513 15.4237 4.32327C12.4093 7.09142 10.7158 10.8458 10.7158 14.7606V69.6896C7.58233 70.7069 4.8693 72.5913 2.95024 75.0831C1.03119 77.575 0.000473205 80.5518 0 83.6039V122.995C0.000473205 126.047 1.03119 129.024 2.95024 131.516C4.8693 134.008 7.58233 135.892 10.7158 136.909V142.686C10.7158 146.6 12.4093 150.355 15.4237 153.123C18.4381 155.891 22.5265 157.446 26.7895 157.446H123.232C127.495 157.446 131.583 155.891 134.598 153.123C137.612 150.355 139.306 146.6 139.306 142.686V136.909C142.435 135.889 145.143 134.003 147.059 131.511C148.974 129.02 150.001 126.045 150 122.995V83.6039C150.001 80.5542 148.974 77.5791 147.059 75.0875C145.143 72.5959 142.435 70.7102 139.306 69.6896V59.0423H91.0844C86.8214 59.0423 82.733 57.4872 79.7186 54.719C76.7042 51.9509 75.0107 48.1965 75.0107 44.2817M16.0952 78.6837H133.937C135.358 78.6837 136.721 79.2021 137.726 80.1248C138.73 81.0475 139.295 82.299 139.295 83.6039V122.995C139.295 124.3 138.73 125.551 137.726 126.474C136.721 127.397 135.358 127.915 133.937 127.915H16.0952C14.6742 127.915 13.3113 127.397 12.3065 126.474C11.3017 125.551 10.7372 124.3 10.7372 122.995V83.6039C10.7372 82.299 11.3017 81.0475 12.3065 80.1248C13.3113 79.2021 14.6742 78.6837 16.0952 78.6837ZM85.7265 44.2817V2.4601L136.627 49.2019H91.0844C89.6634 49.2019 88.3006 48.6835 87.2958 47.7608C86.291 46.8381 85.7265 45.5866 85.7265 44.2817Z" fill="white"/>
+        </svg>
+        <p style="font-weight: 300;">Knowzy allows you to upload multiple PDFs at the same time and interact with them seamlessly. Extract insights,ask questions, and get answers fromall your documents in one go.</p>
+      </div>
+      <div class="feature3">
+        <h3 style="font-weight: 400; font-size: x-large;">AI-Powered Assistance</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 155 155" fill="none" class="img3"> 
+        <path d="M19.834 77.4997C19.834 50.3171 19.834 36.7221 28.2822 28.2812C36.7303 19.8402 50.318 19.833 77.5007 19.833C104.683 19.833 118.278 19.833 126.719 28.2812C135.16 36.7293 135.167 50.3171 135.167 77.4997C135.167 104.682 135.167 118.277 126.719 126.718C118.271 135.159 104.683 135.166 77.5007 135.166C50.318 135.166 36.7231 135.166 28.2822 126.718C19.8412 118.27 19.834 104.682 19.834 77.4997Z" stroke="white" stroke-width="10.8125" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M45.0628 99.1248L58.3406 59.2916C58.6739 58.2975 59.3111 57.4333 60.1622 56.821C61.0133 56.2087 62.0352 55.8793 63.0837 55.8793C64.1321 55.8793 65.1541 56.2087 66.0052 56.821C66.8562 57.4333 67.4934 58.2975 67.8267 59.2916L81.1045 99.1248M52.2712 84.7082H73.8962M102.729 55.8748V99.1248M48.667 5.4165V19.8332M106.334 5.4165V19.8332M77.5003 5.4165V19.8332M48.667 135.167V149.583M77.5003 135.167V149.583M106.334 135.167V149.583M149.584 106.333H135.167M19.8337 48.6665H5.41699M19.8337 106.333H5.41699M19.8337 77.4998H5.41699M149.584 48.6665H135.167M149.584 77.4998H135.167" stroke="white" stroke-width="10.8125" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <p style="font-weight: 300;">Get intelligent answers and extract insights from your documents or general queries with ease.</p>
+      </div>
+    </div>
+    <div class="features">About Knowzy.ai</div>
+    <div class="component-3">
+        <p class="text1">
+          Knowzy is your intelligent assistant designed to make information
+retrieval seamless and efficient. With cutting-edge AI technology, Knowzy
+allows users to interact with multiple PDFs, ask questions, and gain
+insights in their preferred language. Our mission is to bridge the gap
+between vast information and actionable knowledge, ensuring that users
+have the tools they need to work smarter, not harder. Whether you're a
+student, professional, or researcher, Knowzy is here to simplify your
+journey to knowledge.
+        </p>
+    </div>
+    <div class="footer">
+        <div class="contactus">Contact Us</div>
+        <div class="have-question-or-need-support-feel-free-to-contact-with-us">
+          Have questions or need support? Feel free to contact us.
+      </div>
+      <div class="email-support-knowzy-ai-phone-no-91-addresss">
+        Email: support@knowzy.ai<br>
+        Phone: +91 9999999999<br>
+        Address: Vadodara,
+        Gujarat,
+        India<br><br> 
+        <p class="copyright">KNOWZY.AI &copy; All rights reserved</p>
+        <a href="#" style="color: white;">FAQ</a> | 
+        <a href="#" style="color: white;">Privacy Policy</a> | 
+        <a href="#" style="color: white;">Terms of Service</a>
+    </div>
+  
+    </div>
+</body>
+<script>
+function handleButtonClick() 
+  {
+    window.location.href = '/app';
+  }
+  // Example: Adjusting font size dynamically based on window width
+window.addEventListener("resize", () => {
+  const advisorText = document.querySelector(".your-personal-ai-advisor");
+  if (window.innerWidth < 480) {
+    advisorText.style.fontSize = "30px";
+  } else if (window.innerWidth < 768) {
+    advisorText.style.fontSize = "50px";
+  } else {
+    advisorText.style.fontSize = "70px";
+  }
+});
+document.addEventListener("DOMContentLoaded", () => {
+            const video = document.getElementById("myvideo");
+            video.playbackRate = 1.5; // Set the playback speed to 1.25
+});
+
+</script>
+</html>
