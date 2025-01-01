@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+a,
+button,
+input,
+select,
+h1,
+h3,
+h4,
+h5,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    background: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0;
+}
+
+.frame-12,
+.frame-12 * {
+box-sizing: border-box;
+font-family: "Poppins","Poppins Medium";
+position: relative;
+}
+.frame-12 {
+background: #030409;
+height: 4426px;
+position: relative;
+overflow: hidden;
+}
+.logo {
+margin-top: 36px;
+margin-left: 44px;
+user-select: none;
+pointer-events: none;
+}
+.grids {
+width: 1744px;
+height: 5354px;
+position: absolute;
+left: 50%;
+translate: -50% -50%;
+top: 50%;
+overflow: hidden;
+user-select: none;
+pointer-events: none;
+}
+.vector0 {
+width: 100%;
+height: 20.17%;
+position: absolute;
+right: 0%;
+left: 0%;
+bottom: 79.83%;
+top: 0%;
+overflow: visible;
+}
+.vector1 {
+width: 100%;
+height: 20.17%;
+position: absolute;
+right: 0%;
+left: 0%;
+bottom: 60.72%;
+top: 19.11%;
+overflow: visible;
+}
+.vector2 {
+width: 100%;
+height: 20.17%;
+position: absolute;
+right: 0%;
+left: 0%;
+bottom: 41.67%;
+top: 38.16%;
+overflow: visible;
+}
+.vector3 {
+width: 100%;
+height: 20.17%;
+position: absolute;
+right: 0%;
+left: 0%;
+bottom: 24.64%;
+top: 55.19%;
+overflow: visible;
+}
+.vector4 {
+width: 100%;
+height: 21.39%;
+position: absolute;
+right: 0%;
+left: 0%;
+bottom: 7.6%;
+top: 71.01%;
+overflow: visible;
+}
+.vector5 {
+width: 100%;
+height: 22.94%;
+position: absolute;
+right: 0%;
+left: 0%;
+bottom: -8.46%;
+top: 85.52%;
+overflow: visible;
+}
+.extra-boxes {
+  height: auto;
+  position: absolute;
+  left: 300px;
+  top: 61px; 
+}
+
+.stars {
+width: 1901px;
+height: 5365px;
+position: absolute;
+left: 50%;
+translate: -50% -50%;
+top: 50%;
+overflow: visible;
+}
+
+.your-personal-ai-advisor * {
+box-sizing: border-box;
+margin-top: 0;
+height: 200px;
+width: 621px;
+}
+
+.your-personal-ai-advisor {
+text-align: center;
+font-family: "Poppins";
+font-size: 70px;
+line-height: 80px;
+font-weight: 500;
+position: relative;
+margin-top:140px ;
+overflow: hidden;
+}
+
+.your-personal-ai-advisor-span {
+color: #ffffff;
+font-family: "Poppins";
+font-size: 70px;
+line-height: 80px;
+font-weight: 500;
+}
+
+.your-personal-ai-advisor-span2 {
+background: linear-gradient(
+90.06deg,
+rgba(205, 207, 244, 1) 0%,
+rgba(251, 208, 191, 1) 100%
+);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: "Poppins";
+font-size: 70px;
+line-height: 80px;
+font-weight: 500;
+}
+
+.your-personal-ai-advisor-span3 {
+color: #f3eeee;
+font-family: "Poppins";
+font-size: 70px;
+line-height: 80px;
+font-weight: 500;
+margin-bottom: 0;
+}
+
+header h6 {
+
+font-size: 16px;
+color: #858a97;
+text-align: center;
+margin-top: 22px;
+line-height: 30px;
+}
+
+.The-Smart-Choice-is-Knowzy {
+box-sizing: border-box;
+margin-top: 100px;
+text-align: center;
+font-size: 70px;
+background: linear-gradient(
+ 90deg,
+rgba(205, 207, 244, 1) 0%,
+rgba(251, 208, 191, 1) 100%
+);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: "Poppins";
+}
+
+.cta {
+text-align: center;
+margin-top: 30px;
+
+}
+
+.button {
+font-family: "Poppins";
+background-color: #ffffff;
+color: #000000;
+border: none;
+padding: 18px 35px;
+font-size: 1.3rem;
+border-radius: 50px; /* Rounded rectangle shape */
+cursor: pointer;
+transition: background 0.3s, transform 0.2s;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.introduction-to-knowzyai{
+  background: linear-gradient(
+    180deg,
+    rgba(205, 207, 244, 1) 0%,
+    rgb(251, 208, 191, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    margin-top: 150px;
+}
+
+.video-container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 20px;
+}
+
+/* Styling the video */
+
+.loop-video {
+width: 1000px; /* Adjust the width as needed */
+height: 600px;
+border: 20px solid #0e0e0e;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+margin-top: 50px;
+justify-self: center;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 20px;
+}
+     
+.component-2 {
+background: linear-gradient(
+180deg,
+rgba(205, 207, 244, 0.1) 0%,
+rgba(251, 208, 191, 0.1) 100%
+);
+box-sizing: border-box;
+border-radius: 10px;
+width: 1000px;
+height: 420px;
+margin-top: 100px;
+position: relative;
+justify-self: center;
+backdrop-filter: blur(5px);
+}
+
+.text {
+color: white;
+font-family: "Poppins", sans-serif;
+font-size: 16px;
+line-height: 30px;
+font-weight: medium;
+position: relative;
+padding-left: 50px;
+padding-right:50px;
+padding-top: 30px;
+padding-bottom: 20px;
+align-self: center; 
+}
+ul{
+padding-left: 60px;
+padding-right:20px;
+
+}
+.features{
+background: linear-gradient(
+180deg,
+rgba(205, 207, 244, 1) 0%,
+rgb(251, 208, 191, 1) 100%
+);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-align: center;
+font-size: 75px;
+margin-top: 150px;
+}
+.features-box {
+display: flex;
+flex-wrap: wrap;
+position: relative;
+gap: 60px;
+justify-content: center;
+margin-top: 100PX;
+backdrop-filter: blur(5px);
+}
+
+.feature1 {
+color: #ffffff;
+background: linear-gradient(
+180deg,
+rgba(205, 207, 244, 0.1) 0%,
+rgba(251, 208, 191, 0.1) 100%
+);
+border-radius: 8px;
+position: relative;
+padding: 20px;
+padding-top: 40px;
+height: 500px;
+width: 300px;
+text-align: center;
+}
+.feature2 {
+color: #ffffff;
+background: linear-gradient(
+ 180deg,
+ rgba(205, 207, 244, 0.1) 0%,
+ rgba(251, 208, 191, 0.1) 100%
+ );
+border-radius: 8px;
+position: relative;
+padding: 20px;
+padding-top: 40px;
+height: 500px;
+width: 300px;
+text-align: center;
+}
+.feature3 {
+color: #ffffff;
+background: linear-gradient(
+180deg,
+rgba(205, 207, 244, 0.1) 0%,
+rgba(251, 208, 191, 0.1) 100%
+);
+border-radius: 8px;
+position: relative;
+padding: 20px;
+padding-top: 40px;
+height: 500px;
+width: 300px;
+text-align: center;
+}
+.img1{
+margin-top: 40px;
+margin-left: 30px;
+margin-right: 20px;
+margin-bottom: 20px;
+}
+.img2{
+margin-top: 40px;
+margin-left: 30px;
+margin-right: 20px;
+margin-bottom: 20px;
+}
+.img3{
+margin-top: 40px;
+margin-left: 30px;
+margin-right: 20px;
+margin-bottom: 20px;
+}
+    
+.component-3 {
+  background: linear-gradient(
+  180deg,
+  rgba(205, 207, 244, 0.1) 0%,
+  rgba(251, 208, 191, 0.1) 100%
+  );
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 1000px;
+  height: 420px;
+  margin-top: 100px;
+  position: relative;
+  justify-self: center;
+  backdrop-filter: blur(5px);
+  }
+  
+.text1 {
+color: #ffffff;
+text-align: left;
+font-family: "Poppins-Medium", sans-serif;
+font-size: 25px;
+line-height: 35px;
+font-weight: 500;
+position: absolute;
+right: 8.16%;
+left: 8.16%;
+width: 83.68%;
+bottom: 13.32%;
+top: 10%;
+height: 73.36%;
+margin-top: 2%;
+}
+.footer{
+background: linear-gradient(
+180deg,
+rgba(205, 207, 244, 0.1) 0%,
+rgba(251, 208, 191, 0.1) 100%
+);
+box-sizing: border-box;
+width: 100%;
+margin-top: 100px;
+position: relative;
+bottom: 0;
+}
+.contactus{
+font-size: 60px;
+font-weight: 500;
+color: #ffffff;
+text-align: center;
+padding-top: 40px;
+}
+
+.have-question-or-need-support-feel-free-to-contact-with-us {
+color: #ffffff;
+text-align: center;
+font-family: "Poppins-Medium",sans-serif;
+font-size: 25px;
+padding: 20px;   
+/* margin: 20px 0; Adds consistent spacing above and below */
+}
+
+.email-support-knowzy-ai-phone-no-91-addresss {
+color: #ffffff;
+text-align: center;
+font-family: "Poppins-Medium",sans-serif;
+font-size: 25px;
+padding: 20px;
+line-height: 40px;
+/* margin: 10px 0; Adjust space between address sections*/
+} 
+a {
+color: white;
+text-decoration: none;
+/* margin-top: 20px; */
+}
+
+a:hover {
+color: #ddd; /* Subtle hover effect for links */
+}
+
+
+@media (max-width: 480px) {
+  .video-container{
+    margin-top: 50px;
+  }
+  .loop-video {
+    width: 100%;
+    height: auto;
+    margin: 0 auto; /* Center align */
+  }
+  .component-2 {
+    width: 95%;
+    height: auto;
+    margin: 30px auto; /* Center align and adjust margin */
+  }
+  .component-3 {
+    width: 95%;
+    height: auto;
+    margin: 30px auto; /* Center align and adjust margin */
+  }
+  .introduction-to-knowzyai {
+    margin-top: 40px;
+    font-size: 35px;
+  }
+  .features {
+    margin-top: 40px;
+    font-size: 35px;
+  }
+  .features-box {
+    gap: 15px;
+  }
+  .features-box .feature1,
+  .features-box .feature2,
+  .features-box .feature3 {
+    width: 95%;
+    margin: 0 auto; /* Center align */
+  }
+  .frame-12 {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+  }
+  .text1 {
+    position: static;
+    margin: 15px auto;
+    font-size: 16px;
+    line-height: 24px;
+    width: 95%; 
+  }
+  .footer {
+    width: 100%;
+    margin: 0; /* Ensure no extra margin */
+    padding: 0; /* Ensure no unwanted padding */
+  }
+  .grids{
+    top: 2750px;
+    }
+
+  /* Adjust vector and other elements */
+  .vector, .vector2, .vector3, .vector4, .vector5, .vector6 {
+    height: auto; /* Allow each vector to resize naturally */
+  }
+}
+
+@media (max-width: 768px) {
+  .video-container{
+    margin-top: 80px;
+  }
+  .loop-video {
+    width: 90%;
+    height: auto;
+    margin: 0 auto; /* Center align */
+  }
+  .component-2 {
+    width: 90%;
+    height: auto;
+    margin: 50px auto; /* Center align and adjust margin */
+  }
+  .component-3 {
+    width: 90%;
+    height: auto;
+    margin: 50px auto; /* Center align and adjust margin */
+  }
+  .introduction-to-knowzyai {
+    margin-top: 80px;
+    font-size: 50px;
+  }
+  .features {
+    margin-top: 80px;
+    font-size: 50px;
+  }
+  .features-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .features-box .feature1,
+  .features-box .feature2,
+  .features-box .feature3 {
+    width: 90%;
+    margin: 0 auto; /* Center align */
+  }
+  .frame-12 {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+  }
+  .text1 {
+    position: static;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 28px;
+    width: 90%;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .footer {
+    width: 100%;
+    margin: 0; /* Ensure no extra margin */
+    padding: 0; /* Ensure no unwanted padding */
+  }
+}
+
