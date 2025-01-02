@@ -70,17 +70,7 @@ def get_vector_store(text_chunks):
     if not text_chunks:
         raise ValueError("No text chunks provided for vector store creation.")
     
-    os.environ["GOOGLE_TYPE"] = os.getenv("GOOGLE_TYPE")
-    os.environ["GOOGLE_PROJECT_ID"] = os.getenv("GOOGLE_PROJECT_ID")
-    os.environ["GOOGLE_PRIVATE_KEY_ID"] = os.getenv("GOOGLE_PRIVATE_KEY_ID")
-    os.environ["GOOGLE_PRIVATE_KEY"] = os.getenv("GOOGLE_PRIVATE_KEY")
-    os.environ["GOOGLE_CLIENT_EMAIL"] = os.getenv("GOOGLE_CLIENT_EMAIL")
-    os.environ["GOOGLE_CLIENT_ID"] = os.getenv("GOOGLE_CLIENT_ID")
-    os.environ["GOOGLE_AUTH_URI"] = os.getenv("GOOGLE_AUTH_URI")
-    os.environ["GOOGLE_TOKEN_URI"] = os.getenv("GOOGLE_TOKEN_URI")
-    os.environ["GOOGLE_AUTH_PROVIDER_X509_CERT_URL"] = os.getenv("GOOGLE_AUTH_PROVIDER_X509_CERT_URL")
-    os.environ["GOOGLE_CLIENT_X509_CERT_URL"] = os.getenv("GOOGLE_CLIENT_X509_CERT_URL")
-    os.environ["GOOGLE_UNIVERSE_DOMAIN"] = os.getenv("GOOGLE_UNIVERSE_DOMAIN")
+    os.environ["GOOGLE_CLOUD_CREDENTIALS"] = os.getenv("GOOGLE_CLOUD_CREDENTIALS")
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 
     vector_store = FAISS.from_texts(text_chunks, embedding=embeddings)
@@ -89,17 +79,7 @@ def get_vector_store(text_chunks):
 # load vector store
 def load_vector_store():
     """Load the pre-saved FAISS vector store."""
-    os.environ["GOOGLE_TYPE"] = os.getenv("GOOGLE_TYPE")
-    os.environ["GOOGLE_PROJECT_ID"] = os.getenv("GOOGLE_PROJECT_ID")
-    os.environ["GOOGLE_PRIVATE_KEY_ID"] = os.getenv("GOOGLE_PRIVATE_KEY_ID")
-    os.environ["GOOGLE_PRIVATE_KEY"] = os.getenv("GOOGLE_PRIVATE_KEY")
-    os.environ["GOOGLE_CLIENT_EMAIL"] = os.getenv("GOOGLE_CLIENT_EMAIL")
-    os.environ["GOOGLE_CLIENT_ID"] = os.getenv("GOOGLE_CLIENT_ID")
-    os.environ["GOOGLE_AUTH_URI"] = os.getenv("GOOGLE_AUTH_URI")
-    os.environ["GOOGLE_TOKEN_URI"] = os.getenv("GOOGLE_TOKEN_URI")
-    os.environ["GOOGLE_AUTH_PROVIDER_X509_CERT_URL"] = os.getenv("GOOGLE_AUTH_PROVIDER_X509_CERT_URL")
-    os.environ["GOOGLE_CLIENT_X509_CERT_URL"] = os.getenv("GOOGLE_CLIENT_X509_CERT_URL")
-    os.environ["GOOGLE_UNIVERSE_DOMAIN"] = os.getenv("GOOGLE_UNIVERSE_DOMAIN")
+    os.environ["GOOGLE_CLOUD_CREDENTIALS"] = os.getenv("GOOGLE_CLOUD_CREDENTIALS")
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
     return FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
 
