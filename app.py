@@ -73,7 +73,7 @@ def get_vector_store(text_chunks):
     
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.getenv("GOOGLE_CREDENTIALS")
     if GOOGLE_APPLICATION_CREDENTIALS is None:
-    raise ValueError("API_KEY environment variable not set")
+        raise ValueError("API_KEY environment variable not set")
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 
     vector_store = FAISS.from_texts(text_chunks, embedding=embeddings)
@@ -84,7 +84,7 @@ def load_vector_store():
     """Load the pre-saved FAISS vector store."""
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.getenv("GOOGLE_CREDENTIALS")
     if GOOGLE_APPLICATION_CREDENTIALS is None:
-    raise ValueError("API_KEY environment variable not set")
+        raise ValueError("API_KEY environment variable not set")
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
     return FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
 
