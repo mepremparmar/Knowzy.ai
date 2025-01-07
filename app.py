@@ -23,8 +23,10 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 # Load environment variables
 load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_GEMINI_API_KEY"))
-if GOOGLE_GEMINI_API_KEY is None:
+# Check if the API key is None or empty
+if not api_key:
     raise ValueError("GOOGLE_GEMINI_API_KEY environment variable not set")
+
 # Store chat history in memory (use a database for persistent storage in production)
 chat_history = []
 
