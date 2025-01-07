@@ -23,7 +23,8 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 # Load environment variables
 load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_GEMINI_API_KEY"))
-
+if GOOGLE_GEMINI_API_KEY is None:
+    raise ValueError("GOOGLE_GEMINI_API_KEY environment variable not set")
 # Store chat history in memory (use a database for persistent storage in production)
 chat_history = []
 
@@ -71,6 +72,8 @@ def get_vector_store(text_chunks):
         raise ValueError("No text chunks provided for vector store creation.")
     
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.getenv("GOOGLE_CREDENTIALS")
+    if GOOGLE_APPLICATION_CREDENTIALS is None:
+    raise ValueError("API_KEY environment variable not set")
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 
     vector_store = FAISS.from_texts(text_chunks, embedding=embeddings)
@@ -80,6 +83,8 @@ def get_vector_store(text_chunks):
 def load_vector_store():
     """Load the pre-saved FAISS vector store."""
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.getenv("GOOGLE_CREDENTIALS")
+    if GOOGLE_APPLICATION_CREDENTIALS is None:
+    raise ValueError("API_KEY environment variable not set")
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
     return FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
 
