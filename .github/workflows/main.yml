@@ -1,0 +1,34 @@
+name: Deploy My App
+
+# Trigger the workflow on push to the main branch
+on:
+  push:
+    branches:
+      - main  # Change this to your branch if needed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # You can also use other runners like windows-latest or macos-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2  # This checks out your code to the runner
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'  # You can specify the version of Python you want
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt  # This installs your dependencies (including python-dotenv if you're using it)
+
+    - name: Set environment variables from GitHub secrets
+      run: |
+        echo "GOOGLE_APPLICATION_CREDENTIALS=${{ secrets.GOOGLE_CREDENTIALS }}" >> $GITHUB_ENV
+        # Add more secrets as needed
+
+    - name: Deploy app (or run app.py)
+      run: |
+        python app.py  # Replace this with your actual deploy command
